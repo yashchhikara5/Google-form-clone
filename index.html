@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form action="">
+      <div class="main">
+        <h1>Assignment Task</h1>
+        <hr />
+        <p>
+            The name and photo associated with your Google account will be recorded when you upload files and submit this form. Your email is not part of your response.
+        </p>
+        <h4 style="color: red;">* Indicates required question</h4>
+      </div>
+      <div class="MCQ">
+        <h3>MCQ <span style="color: red;">*</span></h3>
+        <input  type="radio" name="mcq" id="option1" value="option1"/>
+        <label for="mcq">Option 1</label><br><br>
+        <input  type="radio" name="mcq" id="option2" value="option2"/>
+        <label for="mcq">Option 2</label><br><br>
+        <input  type="radio" name="mcq" id="option3" value="option3"/>
+        <label for="mcq">Option 3</label>
+
+        <small id="mcq-error"></small>
+      </div>
+
+
+
+      <div class="Checkbox">
+        <h3>Checkbox <span style="color: red;">*</span></h3>
+        <input type="checkbox" id="option1" name="option1" />
+        <label for="option1">Option 1</label><br><br>
+        <input type="checkbox" id="option2" name="option2" />
+        <label for="option2">Option 2</label><br><br>
+        <input type="checkbox" id="option3" name="option3" />
+        <label for="option3">Option 3</label>
+        <small id="checkbox-error"></small>
+      </div>
+
+
+
+      <div class="shortAns">
+        <h3>Short Answer <span style="color: red;">*</span></h3>
+        <input type="text" name="Ans" id="Ans">
+        <small id="shortans-error"></small>
+      </div>
+
+
+
+      <div class="para">
+        <h3>Paragraph <span style="color: red;">*</span></h3>
+        <input type="text" name="para" id="para">
+        <small id="para-error"></small>
+      </div>
+
+
+
+      <div class="dropdown">
+        <h3>Drop Down <span style="color: red;">*</span></h3>
+        <select name="drop" id="drop">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+        </select>
+        <small id="drop-error"></small>
+      </div>
+
+
+      <div class="upload">
+        <h3>File Upload <span style="color: red;">*</span></h3>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+        <small id="upload-error"></small>
+      </div>
+
+
+      <div class="scale">
+        <h3>Linear Scale <span style="color: red;">*</span></h3>
+        <table style="width: 100%; border-spacing: 5px;">
+            <tr id="row1">
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>Best</td>
+                <td><input type="radio" name="gridrow1" id="1" value="1"></td>
+                <td><input type="radio" name="gridrow1" id="2" value="2"></td>
+                <td><input type="radio" name="gridrow1" id="3" value="3"></td>
+                <td><input type="radio" name="gridrow1" id="4" value="4"></td>
+                <td><input type="radio" name="gridrow1" id="5" value="5"></td>
+                <td>Worst</td>
+            </tr>
+        </table>
+        <small id="scale-error"></small>
+      </div>
+
+
+
+      <div class="multigrid">
+        <h3>Multi Choice Grid <span style="color: red;">*</span></h3>
+        <table style="width: 100%; padding: 5px; border-spacing: 5px;">
+            <tr>
+                <td>        </td>
+                <td>Column 1</td>
+                <td>Column 2</td>
+                <td>Column 3</td>
+            </tr>
+            <tr>
+                <td>Row 1</td>
+                <td><input type="radio" name="gridrow1" id="1" value="1"></td>
+                <td><input type="radio" name="gridrow1" id="2" value="2"></td>
+                <td><input type="radio" name="gridrow1" id="3" value="3"></td>
+            </tr>
+            <tr>
+                <td>Row 2</td>
+                <td><input type="radio" name="gridrow2" id="1" value="1"></td>
+                <td><input type="radio" name="gridrow2" id="2" value="2"></td>
+                <td><input type="radio" name="gridrow2" id="3" value="3"></td>
+            </tr>
+            <tr>
+                <td>Row 3</td>
+                <td><input type="radio" name="gridrow3" id="1" value="1"></td>
+                <td><input type="radio" name="gridrow3" id="2" value="2"></td>
+                <td><input type="radio" name="gridrow3" id="3" value="3"></td>
+            </tr>
+        </table>
+        <small id="grid-error"></small>
+      </div>
+
+
+
+      <div class="multigrid">
+        <h3>Tick Box Grid <span style="color: red;">*</span></h3>
+        <table style="width: 100%; padding: 5px; border-spacing: 5px;">
+            <tr>
+                <td>        </td>
+                <td>Column 1</td>
+                <td>Column 2</td>
+                <td>Column 3</td>
+            </tr>
+            <tr>
+                <td>Row 1</td>
+                <td><input type="checkbox" name="gridrow1" id="1"></td>
+                <td><input type="checkbox" name="gridrow1" id="2"></td>
+                <td><input type="checkbox" name="gridrow1" id="3"></td>
+            </tr>
+            <tr>
+                <td>Row 2</td>
+                <td><input type="checkbox" name="gridrow2" id="1"></td>
+                <td><input type="checkbox" name="gridrow2" id="2"></td>
+                <td><input type="checkbox" name="gridrow2" id="3"></td>
+            </tr>
+            <tr>
+                <td>Row 3</td>
+                <td><input type="checkbox" name="gridrow3" id="1"></td>
+                <td><input type="checkbox" name="gridrow3" id="2"></td>
+                <td><input type="checkbox" name="gridrow3" id="3"></td>
+            </tr>
+        </table>
+        <small id="box-error"></small>
+      </div>
+
+
+
+      <div class="submit">
+        <button>Submit</button>
+      </div>
+      <p class="rule">Never submit passwords through Google Forms</p>
+      <p class="policy">
+        This content is neither created nor endrosed by Google.
+        <a href="#">Report Abuse.</a> <a href="#">Terms of condition.</a>
+        <a href="#">Privacy Policy.</a>
+        <h1 class="Google" style="color: grey; font-weight: 550; width: 50vw;">Google Forms</h1>
+      </p>
+    </form>
+  </body>
+</html>
